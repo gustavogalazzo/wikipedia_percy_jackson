@@ -1,0 +1,116 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul { list-style: none; padding-left: 5px; }
+
+a { color:blue; text-decoration: none;}
+
+.bar {
+  background-color: #f9f9fb;
+  padding:15px;
+  border-top: solid 1px #cdcdcd;
+  border-bottom: solid 1px #cdcdcd;
+}
+
+.content {
+  max-width: 1440px;
+  margin: auto;
+  grid-gap: 3rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-areas: "sidebar main anchors";
+  grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+}
+
+.anchors {
+  border-left: solid 1px #cdcdcd;
+  padding-left: 15px;
+}
+
+.anchors details{
+  list-style: disc;
+  cursor: pointer;
+}
+
+.anchors details, li{
+  padding: 5px; 
+}
+.sidebar {
+  border-right: solid 1px #cdcdcd;
+}
+
+.principal h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.books h2{
+  text-transform: uppercase;
+  padding: 15px 0 0 0;
+}
+
+.books h3{
+  font-style: italic;
+}
+
+.vgl h2{
+  padding: 15px 0 0 0;
+text-transform: uppercase;
+}
+
+.tab{
+  text-align: center;
+  background-color: #f8f9fa;
+  color: #202122;
+  margin: 1em 0;
+  border: 1px solid #a2a9b1;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tab thead{
+  border: 1px solid #a2a9b1;
+  padding: 0.2em 0.4em;
+}
+
+.tab tbody tr td{
+  border: 1px solid #a2a9b1;
+  padding: 0.2em 0.4em;
+}
+
+.vgl h3{
+  text-align: center;
+}
+
+.vgl ul{
+  list-style: disc;
+}
+
+.vgl iframe{
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+figure {
+  text-align: center;
+}
+
+.footer {
+  min-height: 100px;
+  border-top: solid 1px #cdcdcd;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.footer img{
+  width: 200px;
+}
